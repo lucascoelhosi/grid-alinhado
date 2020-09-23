@@ -1,0 +1,71 @@
+.news-line {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .news-line .news-line_title {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .news-line .news-line_title span {
+    border-top: 2px solid #000;
+  }
+  
+  .news-line .news-wrapper ul {
+    list-style-type: none;
+    /* 
+        Ajuste no grid para evitar que os itens se 
+        choquem e se desalinhem por conta do tamanho 
+    */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .news-line .news-wrapper ul li {
+    margin: 0;
+    width: 33.33%;
+    float: left;
+  }
+  
+  .news-line .news-wrapper ul li .box {
+    background-color: #FFF;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .news-line .news-wrapper ul li .box .image {
+    background: url('http://grafreez.com/wp-content/temp_demos/river/img/media-7.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px; 
+  }
+  
+  .news-line .news-wrapper ul li .box .content {
+    padding: 5px 10px;
+    line-height: 28px;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+  }
+  
+  .news-line .news-wrapper ul li .box .content .date {
+    margin-left: 30px;
+    float: right;
+  }
+  
+  .news-line .more-news {
+    display: flex;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .news-line .more-news a {
+    width: 100%;
+    background-color: #FFF;
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
